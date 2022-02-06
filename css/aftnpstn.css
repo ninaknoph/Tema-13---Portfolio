@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #fdf7f3;
+  background-color: #fff;
   font-family: "neue-haas-grotesk-display";
 }
 
@@ -24,6 +24,21 @@ header {
   justify-content: space-between;
 }
 
+.sticky {
+  background: #fff;
+  position: sticky;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 4rem;
+  width: 100vw;
+}
+
+.main-menu-desktop {
+  position: sticky;
+  display: inline;
+}
+
 .main-menu-desktop ul {
   font-weight: 400;
   color: black;
@@ -32,11 +47,6 @@ header {
   gap: 1.2rem;
   padding: 1rem;
   margin: 20px;
-}
-
-.main-menu-desktop {
-  position: sticky;
-  display: inline;
 }
 
 .main-menu-desktop ul li {
@@ -53,8 +63,7 @@ header {
 }
 
 .main-menu-desktop ul li a:hover {
-  color: #fc4d46;
-  border-bottom: #fc4d46 solid 1px;
+  border-bottom: #fffd07 solid 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,15 +146,13 @@ header {
 }
 
 h1 {
-  color: #fc4d46;
+  color: #000;
   font-size: 6rem;
   min-height: 55vh;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  padding-left: 6rem;
-  margin-top: -150px;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 14px;
 }
 
@@ -153,80 +160,82 @@ h1 {
   h1 {
     font-size: 4rem;
   }
-}
-
-.jeg-er {
-  font-size: 40px;
-  color: black;
-  min-height: 55vh;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  padding: 6rem;
-}
-
-.bio {
-  padding-left: 6rem;
-  padding-right: 700px;
-  margin-top: -160px;
-  align-items: left;
-  justify-content: left;
+  .top {
+    flex-direction: column;
+  }
 }
 
 img {
-  width: 30%;
+  width: 35%;
+  display: flex;
+  margin: auto;
 }
 
-h2 {
-  color: #fc4d46;
-  font-size: 60px;
-  width: 90%;
-  max-width: 80rem;
-  margin: auto;
-  margin-top: 7rem;
+.top {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  background: #fffd07;
+  justify-content: space-evenly;
+  margin: 50px 0;
+  padding: 30px 50px;
+  column-gap: 40px;
+}
+
+.oppgaven {
+  flex-grow: 2;
+}
+
+.prosjektdetaljer {
+  flex-grow: 1;
 }
 
 h3 {
-  color: #fc4d46;
-  font-size: 60px;
-  width: 90%;
-  max-width: 80rem;
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
   margin: auto;
-  margin-top: 7rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  letter-spacing: 14px;
+  align-items: center;
+  padding: 10 100px;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 1.3em;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 45vh);
-  padding: 0;
-  margin: 30px;
+/* p {
+  padding: 0 10em;
+  margin: 0 200px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.image-research-1 img {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
 }
 
-.container {
-  background-color: #adba9f;
-  border-radius: 17px;
-  padding: 1.3em;
-  font-weight: 400;
-  font-size: 2.4em;
-  color: white;
+.image-research-2 img {
+  width: 30%;
+  display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  .container {
-    height: 20vh;
-  }
+/* img {
+  width: 14%;
+} */
+
+.research {
+  /* padding: 0 10em;
+  margin: 0 200px; */
+}
+
+.bullet-points {
+  display: flex;
+  padding: 0 10em;
+  margin: 0 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lofi {
+  display: inline-block;
+  display: flex;
+  width: 40%;
 }
