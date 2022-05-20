@@ -9,39 +9,27 @@ html {
 }
 
 body {
-  background-color: #fdf7f3;
+  background-color: #fffdf8;
   font-family: "neue-haas-grotesk-display";
 }
 
 header {
   position: fixed;
-  min-height: 80px;
+  background-color: #fffdf8;
+  height: 80px;
   width: 100%;
-  color: #fff;
   z-index: 5;
   display: flex;
-  gap: 1rem;
   justify-content: space-between;
 }
 
 .main-menu-desktop ul {
   font-weight: 400;
-  color: black;
   display: flex;
   list-style: none;
-  gap: 1.2rem;
+  gap: 3rem;
   padding: 1rem;
   margin: 20px;
-}
-
-.main-menu-desktop {
-  position: sticky;
-  display: inline;
-}
-
-.main-menu-desktop ul li {
-  display: inline;
-  gap: 2rem;
 }
 
 .main-menu-desktop ul li a {
@@ -49,12 +37,11 @@ header {
   font-weight: 300;
   text-decoration: none;
   font-size: 22px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .main-menu-desktop ul li a:hover {
-  color: #fc4d46;
-  border-bottom: #fc4d46 solid 1px;
+  border-bottom: #fc4d46 solid 3px;
 }
 
 @media screen and (min-width: 768px) {
@@ -77,6 +64,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-header {
+    display: block;
+  }
+
   .burger-icon {
     display: none;
   }
@@ -95,8 +86,7 @@ header {
 .logo {
   background-image: url(/assets/reddot.svg);
   padding: 10rem;
-  margin: 1rem;
-  background-size: center;
+  margin: 20px;
   background-repeat: no-repeat;
 }
 
@@ -142,7 +132,6 @@ h1 {
   min-height: 55vh;
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: left;
   padding-left: 6rem;
   margin-top: -150px;
@@ -151,7 +140,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -167,14 +156,15 @@ h1 {
 
 .bio {
   padding-left: 6rem;
-  padding-right: 700px;
+  padding-right: 70px;
   margin-top: -160px;
-  align-items: left;
   justify-content: left;
 }
 
 img {
   width: 30%;
+  margin: 50px;
+  margin-top: 100px;
 }
 
 h2 {
@@ -183,23 +173,10 @@ h2 {
   width: 90%;
   max-width: 80rem;
   margin: auto;
-  margin-top: 7rem;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-}
-
-h3 {
-  color: #fc4d46;
-  font-size: 60px;
-  width: 90%;
-  max-width: 80rem;
-  margin: auto;
-  margin-top: 7rem;
+  margin-top: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 14px;
 }
 
 .wrapper {
@@ -209,15 +186,63 @@ h3 {
   grid-template-rows: repeat(2, 45vh);
   padding: 0;
   margin: 30px;
+  filter: drop-shadow(1px 0px 1px #f1f1f1);
+  border-radius: 0.5px;
+  border: #dedcd7;
+}
+
+.work-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.work-title {
+  z-index: 2;
+  position: absolute;
+  bottom: 0.4rem;
 }
 
 .container {
-  background-color: #adba9f;
+  background-color: #fdf7f3;
+  padding: 1.3em;
+  border-radius: 17px;
+  font-weight: 600;
+  font-size: 2.4em;
+  color: #ecea0e;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.container2 {
+  background-color: #fdf7f3;
+  color: #f74b20;
   border-radius: 17px;
   padding: 1.3em;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2.4em;
-  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.container3 {
+  background-color: #fdf7f3;
+  color: #0f384d;
+  border-radius: 17px;
+  padding: 1.3em;
+  font-weight: 600;
+  font-size: 2.4em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 @media screen and (max-width: 768px) {

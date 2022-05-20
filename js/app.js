@@ -40,8 +40,7 @@ async function getPost(pageValue) {
   cover.alt = result[0].title;
 
   const brief = document.querySelector(".brief-text");
-  brief.innerText = result[0].brief;
-  brief.append(handleParagraphs(result[0].brief));
+  brief.append(handleParagraphs(result[0].breif));
 
   const client = document.querySelector(".client");
   client.innerText = result[0].client;
@@ -101,7 +100,7 @@ async function getPosts() {
     await fetch(`https://${projectID}.api.sanity.io/v1/data/query/production?query=*
   [_type == "post"]
   `);
-
+  console.log(posts);
   /* etter fetch har ferdig returnere en http response objekt og vi henter ut av det
   result underobjekt ved hjelp av en til funksjon av javascript json()*/
   const { result } = await posts.json();
