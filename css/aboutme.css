@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -15,11 +15,12 @@ body {
 
 header {
   position: fixed;
-  background-color: #fffdf8;
-  height: 80px;
+  min-height: 80px;
   width: 100%;
+  color: #fffdf8;
   z-index: 5;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -49,6 +50,10 @@ header {
 .dropdown {
   float: left;
   overflow: hidden;
+}
+
+.line a {
+  border-bottom: #fc4d46 solid 3px;
 }
 
 /* Dropdown button */
@@ -94,13 +99,24 @@ header {
   display: block;
 }
 
-/* .main-menu-desktop ul {
+/* .main-menu-desktop {
+  position: sticky;
+  display: inline;
+}
+
+.main-menu-desktop ul {
   font-weight: 400;
+  color: black;
   display: flex;
   list-style: none;
-  gap: 3rem;
+  gap: 1.2rem;
   padding: 1rem;
   margin: 20px;
+}
+
+.main-menu-desktop ul li {
+  display: inline;
+  gap: 2rem;
 }
 
 .main-menu-desktop ul li a {
@@ -108,11 +124,11 @@ header {
   font-weight: 300;
   text-decoration: none;
   font-size: 22px;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .main-menu-desktop ul li a:hover {
-  border-bottom: #fc4d46 solid 3px;
+  border-bottom: #f74b20 solid 3px;
 } */
 
 @media screen and (min-width: 768px) {
@@ -135,10 +151,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .mobile-header {
-    display: block;
-  }
-
   .burger-icon {
     display: none;
   }
@@ -157,7 +169,8 @@ header {
 .logo {
   background-image: url(/assets/reddot.svg);
   padding: 10rem;
-  margin: 20px;
+  margin: 1rem;
+  background-size: center;
   background-repeat: no-repeat;
 }
 
@@ -199,132 +212,47 @@ header {
 }
 
 h1 {
-  color: #fc4d46;
+  color: #f74b20;
   font-size: 6rem;
   min-height: 55vh;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  padding-left: 6rem;
-  margin-top: -150px;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 14px;
 }
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
-}
 
-.jeg-er {
-  font-size: 40px;
-  color: black;
-  min-height: 55vh;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  padding: 6rem;
-}
-
-.bio {
-  padding-left: 6rem;
-  padding-right: 70px;
-  margin-top: -160px;
-  justify-content: left;
-}
-
-img {
-  width: 30%;
-  margin: 50px;
-  margin-top: 100px;
-}
-
-h2 {
-  color: #fc4d46;
-  font-size: 60px;
-  width: 90%;
-  max-width: 80rem;
-  margin: auto;
-  margin-top: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 1.3em;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 45vh);
-  padding: 0;
-  margin: 30px;
-  filter: drop-shadow(1px 0px 1px #f1f1f1);
-  border-radius: 0.5px;
-  border: #dedcd7;
-}
-
-.work-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.work-title {
-  z-index: 2;
-  position: absolute;
-  bottom: 0.4rem;
-}
-
-.container {
-  background-color: #fdf7f3;
-  padding: 1.3em;
-  border-radius: 17px;
-  font-weight: 600;
-  font-size: 2.4em;
-  color: #ecea0e;
-  position: relative;
-  text-decoration: none;
-  text-align: center;
-}
-
-.container2 {
-  background-color: #fdf7f3;
-  color: #f74b20;
-  border-radius: 17px;
-  padding: 1.3em;
-  font-weight: 600;
-  font-size: 2.4em;
-  text-decoration: none;
-  text-align: center;
-}
-
-.container3 {
-  background-color: #fdf7f3;
-  color: #0f384d;
-  border-radius: 17px;
-  padding: 1.3em;
-  font-weight: 600;
-  font-size: 2.4em;
-  text-decoration: none;
-  text-align: center;
-}
-
-.container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    display: flex;
+  .top {
     flex-direction: column;
-    height: 100vh;
   }
+}
 
-  .container {
-    height: 20vh;
-  }
+.about-me {
+  margin: -40px 400px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 100%;
+  background-color: #f74b20;
+  padding: 40px;
+}
+
+.footer a {
+  color: white;
+  text-align: left;
+  margin: 20px;
+  column-gap: 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  border-bottom: #fff solid 1px;
 }

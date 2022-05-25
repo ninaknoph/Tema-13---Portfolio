@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="no">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 maximum-scale=5.0"
-    />
-    <title>Nina Knoph - Portfolio - UX Designer</title>
-    <meta name="description" content="A UX Designer based in Oslo." />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="https://use.typekit.net/mgw7rfx.css" />
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0" />
+  <title>Nina Knoph - Portfolio - UX Designer</title>
+  <meta name="description" content="A UX Designer based in Oslo." />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-      <span class="logo"><a href="index.html"></a></span>
-      
-      <nav class="main-menu-desktop">
-        <ul>
-          <li><a href="#">Prosjekter</a></li>
-          <li><a href="#">Om meg</a></li>
-          <li><a href="#">CV</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
+  <link rel="stylesheet" href="https://use.typekit.net/mgw7rfx.css" />
+</head>
 
-      <nav class="mobile-nav mobile-nav-hide">
-        <ul>
-          <li><a href="#">Prosjekter</a></li>
-          <li><a href="#">Om meg</a></li>
-          <li><a href="#">CV</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
+<body>
+  <header>
 
-      <div
-        role="button"
-        aria-label="Main menu icon"
-        class="burger-icon burger"
-      ></div>
-    </header>
+    <span class="logo"><a href="index.html"></a></span>
 
-    <div class="dropdown" style="float: right">
-      <div class="dropdown-content">
-        <a href="aftnpstn.html">Aftnpstn</a>
-        <a href="runin.html">Run In</a>
-        <a href="onemed.html">OneMed</a>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Prosjekter
+        </button>
+        <div class="dropdown-content">
+          <a href="aftnpstn.html">Aftnpstn</a>
+          <a href="runin.html">Run In</a>
+          <a href="onemed.html">OneMed</a>
+        </div>
       </div>
+      <a href="aboutme.html">Om meg</a>
+      <a href="#">CV</a>
+      <a href="mailto:ninaknoph@hotmail.com">Kontakt</a>
+
     </div>
 
-    <div class="image" role="figure" aria-label="Image of Nina Knoph"></div>
 
-    <section style="display: flex">
-      <div class="intro">
-        <p class="jeg-er">Hallo! 👋🏼 Jeg er</p>
-        <h1>NINA</h1>
-        <p> <article class="bio">
+    <nav class="mobile-nav mobile-nav-hide">
+      <ul>
+        <li><a href="#">Prosjekter</a></li>
+        <li><a href="#">Om meg</a></li>
+        <li><a href="#">CV</a></li>
+        <li><a href="mailto:ninaknoph@hotmail.com">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div role="button" aria-label="Main menu icon" class="burger-icon burger"></div>
+  </header>
+
+
+  <div class="image" role="figure" aria-label="Image of Nina Knoph"></div>
+
+  <section style="display: flex">
+    <div class="intro">
+      <p class="jeg-er">Hallo! 👋🏼 Jeg er</p>
+      <h1>NINA</h1>
+      <p>
+        <article class="bio">
           Jeg er en ferdig utdannet, utadvendt, nysgjerrig, strukturert, positiv
           og ambisiøs interaksjonsdesigner. Jeg motiveres av å hjelpe andre
           mennesker og skape gode og sømløse designopplevelser for
@@ -66,23 +63,25 @@
           flater. Jeg har god design- og forretningsforståelse, jeg er vant til
           å være fleksibel, ha deadlines og liker godt å jobbe i et kreativt
           team med høyt tempo og flinke folk.
-        </article></p>
-      </div>
-      <img src="/assets/nina_bw.jpg" alt="blackwhite photo of nina knoph" />
-    </section>
+        </article>
+      </p>
+    </div>
+    <img src="/assets/nina_bw.jpg" alt="blackwhite photo of nina knoph" />
+  </section>
 
-    <h2>Mine prosjekter</h2>
+  <h2>Mine prosjekter</h2>
 
-      <div class="wrapper">
-        <a href="aftnpstn.html" class="container">AFTNPSTN</a>
-        <a href="runin.html" class="container2">RUN IN</a>
-        <a href="onemed.html" class="container3">ONE MED</a>
-      </div>
+  <div class="wrapper">
+    <a href="aftnpstn.html" class="container">AFTNPSTN</a>
+    <a href="runin.html" class="container2">RUN IN</a>
+    <a href="onemed.html" class="container3">ONE MED</a>
+  </div>
 
-<img src="assets/mobil:webside/mobil_aftnpstn.png" alt="mobilbilde av aftnpstn app" class="aftnpstn-img"/>
-<img src="assets/mobil:webside/mobil_runin.png" alt="mobilbilde av aftnpstn app" class="runin-img"/>
-<img src="assets/mobil:webside/web_onemed.png" alt="mobilbilde av aftnpstn app" class="onemed-img"/>
+  <img src="assets/mobil:webside/mobil_aftnpstn.png" alt="mobilbilde av aftnpstn app" class="aftnpstn-img" />
+  <img src="assets/mobil:webside/mobil_runin.png" alt="mobilbilde av aftnpstn app" class="runin-img" />
+  <img src="assets/mobil:webside/web_onemed.png" alt="mobilbilde av aftnpstn app" class="onemed-img" />
 
-    <script type="module" src="js/app.js"></script>
-  </body>
+  <script type="module" src="js/app.js"></script>
+</body>
+
 </html>

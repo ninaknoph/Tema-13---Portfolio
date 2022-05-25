@@ -24,17 +24,78 @@ header {
   justify-content: space-between;
 }
 
-.sticky {
-  background: #fff;
-  position: sticky;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  height: 4rem;
-  width: 100vw;
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #fffdf8;
+  color: black;
+  font-size: 22px;
 }
 
-.main-menu-desktop {
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: #fc4d46 solid 1px;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fffdf8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fffdf8;
+  color: #fc4d46;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .main-menu-desktop {
   position: sticky;
   display: inline;
 }
@@ -63,8 +124,8 @@ header {
 }
 
 .main-menu-desktop ul li a:hover {
-  border-bottom: #f74b20 solid 1px;
-}
+  border-bottom: #f74b20 solid 3px;
+} */
 
 @media screen and (min-width: 768px) {
   .main-menu-desktop {
@@ -140,13 +201,14 @@ header {
   from {
     transform: translate(100vw);
   }
+
   to {
     transform: translate(0px);
   }
 }
 
 h1 {
-  color: #000;
+  color: #f74b20;
   font-size: 6rem;
   min-height: 55vh;
   display: flex;
@@ -160,6 +222,7 @@ h1 {
   h1 {
     font-size: 4rem;
   }
+
   .top {
     flex-direction: column;
   }
@@ -195,16 +258,15 @@ h3 {
   font-size: 40px;
   font-weight: 500;
   margin: auto;
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10 100px;
+  padding: 80px;
 }
 
 p {
-  padding: 0 10em;
-  margin: 0 200px;
+  padding: 80px;
+  margin: 0 300px;
   justify-content: center;
   align-items: center;
 }
@@ -212,6 +274,10 @@ p {
 .research {
   padding: 0 10em;
   margin: 0 200px;
+}
+
+.problem {
+  text-align: center;
 }
 
 .bullet-points {
@@ -222,8 +288,57 @@ p {
   align-items: center;
 }
 
-.lofi {
-  display: inline-block;
-  display: flex;
-  width: 40%;
+.design-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat;
+  grid-gap: 15px;
+  border: 0.5 solid black;
+  margin: 100px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.les-mer {
+  text-align: center;
+  color: black;
+}
+
+.les-mer a {
+  text-decoration: none;
+  color: black;
+}
+
+.les-mer a:hover {
+  border-bottom: #000 solid 1px;
+}
+
+.footer {
+  height: 100%;
+  background-color: #f74b20;
+  padding: 40px;
+}
+
+.footer a {
+  color: white;
+  text-align: left;
+  margin: 20px;
+  column-gap: 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  border-bottom: #fff solid 1px;
 }
