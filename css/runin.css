@@ -15,12 +15,11 @@ body {
 
 header {
   position: fixed;
-  min-height: 80px;
+  background-color: #fffdf8;
+  height: 80px;
   width: 100%;
-  color: #fffdf8;
   z-index: 5;
   display: flex;
-  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -60,8 +59,10 @@ header {
   color: #000;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
 }
 
 /* Dropdown content (hidden by default) */
@@ -258,15 +259,16 @@ h3 {
   font-size: 40px;
   font-weight: 500;
   margin: auto;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding: 10px;
 }
 
 p {
-  padding: 80px;
-  margin: 0 300px;
+  padding: 0 10em;
+  margin: 0 200px;
   justify-content: center;
   align-items: center;
 }
@@ -313,16 +315,16 @@ p {
 
 .les-mer {
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .les-mer a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .les-mer a:hover {
-  border-bottom: #000 solid 1px;
+  border-bottom: #fff solid 1px;
 }
 
 .footer {

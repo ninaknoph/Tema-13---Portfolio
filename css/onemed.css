@@ -274,7 +274,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10 100px;
+  padding: 10px;
 }
 
 p {
@@ -324,6 +324,7 @@ p {
   height: 100%;
   background-color: #f74b20;
   padding: 40px;
+  margin-top: 40px;
 }
 
 .footer a {
