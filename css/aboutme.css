@@ -15,12 +15,11 @@ body {
 
 header {
   position: fixed;
-  min-height: 80px;
+  background-color: #fffdf8;
+  height: 80px;
   width: 100%;
-  color: #fffdf8;
   z-index: 5;
   display: flex;
-  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -29,7 +28,7 @@ header {
   overflow: hidden;
   background-color: #fffdf8;
   color: black;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* Links inside the navbar */
@@ -241,7 +240,7 @@ h1 {
 
 .footer {
   height: 100%;
-  background-color: #f74b20;
+  background-color: #fc4d46;
   padding: 40px;
 }
 
