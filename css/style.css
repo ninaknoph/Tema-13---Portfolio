@@ -94,27 +94,6 @@ header {
   display: block;
 }
 
-/* .main-menu-desktop ul {
-  font-weight: 400;
-  display: flex;
-  list-style: none;
-  gap: 3rem;
-  padding: 1rem;
-  margin: 20px;
-}
-
-.main-menu-desktop ul li a {
-  color: black;
-  font-weight: 300;
-  text-decoration: none;
-  font-size: 22px;
-  transition: all 0.1s ease-in-out;
-}
-
-.main-menu-desktop ul li a:hover {
-  border-bottom: #fc4d46 solid 3px;
-} */
-
 @media screen and (min-width: 768px) {
   .main-menu-desktop {
     display: block;
