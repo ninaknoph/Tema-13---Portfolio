@@ -63,8 +63,10 @@ header {
   color: #000;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
 }
 
 /* Dropdown content (hidden by default) */
@@ -137,7 +139,6 @@ header {
   background-image: url(/assets/reddot.svg);
   padding: 10rem;
   margin: 1rem;
-  background-size: center;
   background-repeat: no-repeat;
 }
 
@@ -179,7 +180,7 @@ header {
 }
 
 h1 {
-  color: #f74b20;
+  color: #fc4d46;
   font-size: 6rem;
   min-height: 55vh;
   display: flex;
